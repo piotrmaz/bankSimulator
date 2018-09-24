@@ -1,0 +1,78 @@
+body
+{
+	margin: 0 !important;
+}
+
+.navbar
+{
+	width: 100%;
+	background-color: #555454;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	
+}
+
+.zaloguj
+{
+	font-size: 25px;
+	background-color: #999999;
+	width:85px;
+	height: 38px;
+	
+}
+.zaloguj a
+{
+	padding: 1px;
+	display: block;
+	width: 83px;
+	height: 36px;
+	text-align: center;
+}
+.zaloguj a:active
+{
+	color: black;
+	text-decoration: none;
+}
+.zaloguj a:link
+{
+	color: black;
+	text-decoration: none;
+}
+.zaloguj a:visited
+{
+	color: black;
+	text-decoration: none;
+}
+.zaloguj a:hover
+{
+	color: black;
+	text-decoration: none;
+	background-color: #888888;
+}
+
+.rectangle
+{
+	margin: 0;
+	background-color: green;
+	height: 580px;
+	width: 100%;
+}
+
+.addacount
+{
+	padding: 25px;
+	text-align: center;
+}
+
+.text
+{
+	padding: 15px;
+	text-align: center;
+}
+
+.footer
+{
+	font-size: 20px;
+	text-align: center;
+}
