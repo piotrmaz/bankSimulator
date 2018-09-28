@@ -18,7 +18,7 @@ if((isset($_SESSION['zalogowany']))&&($_SESSION['zalogowany']==true)) // jesli z
     <meta name="keywords" content="bank, acount, przelew, nauka">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="bankstyle.css">
+    <link rel="stylesheet" href="bankstylee.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -38,12 +38,22 @@ if((isset($_SESSION['zalogowany']))&&($_SESSION['zalogowany']==true)) // jesli z
 	<div class="rectangle">
 
 		<div class="header">
-			<div class="addacount">
-				<a href="adduser.php" target="_blank">Utwórz konto</a>
-			</div>
+			
 			
 			<div class="text">
-				<p>W tym miejscu możesz utworzyć konto użytkownika. Po zalogowaniu będziesz mógł poćwiczyć wykonywanie przelewów.</p>
+				<p>Boisz się obsługi swojego konta przez internet? Nie wiesz jak wykonać przelew? W tym miejscu możesz utworzyć konto użytkownika. Po zalogowaniu będziesz mógł poćwiczyć wykonywanie przelewów.</p>
+			</div>
+		</div>
+		<div class="loguj">
+			<div class="text">
+			<p>Aby utworzyć konto użytkownika musisz podać imie, nazwisko, email oraz hasło. Dane nie muszą być prawdziwe. Do logowania konieczny będzie email i hasło podane podczas rejestracji.</p>
+			</div>
+			
+		</div>
+		<div style="clear:both;"></div>
+		<div class="button">
+			<div class="addacount">
+				<a href="adduser.php" target="_blank">Utwórz konto</a>
 			</div>
 		</div>
 	

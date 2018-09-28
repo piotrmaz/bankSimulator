@@ -1,10 +1,31 @@
 <?php
 session_start();
 
-	if(!isset($_SESSION['udana_rejestracja'])) // jesli zmienna sesyjna 'zalogowany' istnieje i jest 'true'
+	if(isset($_SESSION['udana_rejestracja'])) // jesli zmienna sesyjna 'zalogowany' istnieje i jest 'true'
 	{
+		require_once "conn.php";
+		$polaczenie = new mysqli($host, $db_user, $db_pass, $db_name);
+		if ($polaczenie->connect_errno!=0)
+			{
+				throw new Exception(mysqli_connect_errno());
+			}
+			else
+			{
+				$randNumberLength = 18;  // length of your giant random number
+				$randNumber = NULL;
+
+				for ($i = 0; $i < $randNumberLength; $i++) 
+				{
+					$randNumber .= rand(1, 9);  // add random number to growing giant random number
+				}
+				
+				$polaczenie->query("INSERT INTO account VALUES (NULL, '$randNumber', NULL)");
+				$polaczenie->close();
+			}
+			
 		header('Location: index.php');									  // przejdz do strony gra.php
-		exit();															  // zamyka sesje
+		exit();	
+		
 	}
 	else
 	{
@@ -24,7 +45,7 @@ session_start();
     <meta name="keywords" content="bank, acount, przelew, nauka">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="bankstyle.css">
+    <link rel="stylesheet" href="bankstylee.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>

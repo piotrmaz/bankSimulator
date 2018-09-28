@@ -112,7 +112,7 @@ if (isset($_POST['email']))
 				
 				if($wszystko_ok==true)
 				{
-					if($polaczenie->query("INSERT INTO user VALUES (NULL, 87111123498, '$email', '$name', '$lastName', '$password_hash')"))
+					if($polaczenie->query("INSERT INTO user VALUES (NULL, 1, 87111123498, '$email', '$name', '$lastName', '$password_hash')"))
 					
 					{
 						$_SESSION['udana_rejestracja']=true;
@@ -153,7 +153,7 @@ if (isset($_POST['email']))
     <meta name="keywords" content="bank, acount, przelew, nauka">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="bankstyle.css">
+    <link rel="stylesheet" href="bankstylee.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
