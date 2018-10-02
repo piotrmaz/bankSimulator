@@ -3,7 +3,7 @@ session_start();
 
 if((isset($_SESSION['zalogowany']))&&($_SESSION['zalogowany']==true)) // jesli zmienna sesyjna 'zalogowany' istnieje i jest 'true'
 {
-	header('Location: simulator.php');									  // przejdz do strony gra.php
+	header('Location: simulator.php');									  // przejdz do strony simulator.php
 	exit();															  // zamyka sesje
 }
 

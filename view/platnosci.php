@@ -1,0 +1,1 @@
+tu beda realizowane płatności

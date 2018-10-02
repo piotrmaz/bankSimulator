@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -15,7 +20,6 @@
 </head>
 
 <body>
-
 	<nav>
 			<div class="navbar">
 				<div class="zaloguj">
@@ -23,23 +27,29 @@
 					<div style="clear:both;"></div>	
 				</div>	
 			</div>
+			<ul>
+				<li><a href="?id=pulpit">Pulpit</a></li>
+				<li><a href="?id=platnosci">Płatności</a></li>
+			</ul>
 	</nav>
 	
 	<div class="rectangle">
-			
-			
-			
 		
-			<div class="text">
-				<p>Blaslalsalskkdjhskdlf;.</p>
-			</div>
-		</div>
-	
+		<?php
+			if(isset($_GET['id']))
+			{
+				include 'view/'.$_GET['id'].'.php';
+			}		
+		?>
+		
 	</div>
 	
-	<div class="footer">
+	
+	
+	
+		<div class="footer">
 			banksimulator.pl &copy; 2018 Wszelkie prawa zastrzeżone.
-	</div>
+		</div>
 </body>
 
 </html>

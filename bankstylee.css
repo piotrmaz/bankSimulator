@@ -97,3 +97,30 @@ body
 	font-size: 20px;
 	float: left;
 	text-align: center;
+}
+
+.pulpit
+{
+	background-color: white;
+	width: 350px;
+	height: 350px;
+	margin-right: auto;
+	margin-left: auto;
+
+}	
+.dane
+{
+	
+	background-color: white;
+	width: 350px;
+	height: 350px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.strona
+{
+	height: 530px;
+	background-color: yellow;
+}
